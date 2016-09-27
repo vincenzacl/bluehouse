@@ -61,26 +61,29 @@
 				//document.addEventListener("online", this.onOnline, false);    			
 		    }
             function onDeviceReady() {
-            	//var ref = window.open('http://onkelshaarby.dk/?app=1', '_self', 'location=no');
+            	var ref = window.open('http://m.bluehouse.dk/?app=1', '_self', 'location=no');
                 var networkState = checkConnection();
                 /* load local files if there is not network connection */
                 if (networkState == Connection.NONE) {
                      navigator.notification.alert('Du har ingen internet forbindelse.');
+                     var ref = window.open('http://m.bluehouse.dk/?app=1', '_self', 'location=no');
                 } else {
                     // external url
-                    //navigator.notification.alert('Opening website');
+                    navigator.notification.alert('Opening website');
                     var ref = window.open('http://m.bluehouse.dk/?app=1', '_self', 'location=no');
-                    // relative document
+                     relative document
                     //ref = window.open('next.html', '_self');                    
                 }
+                var ref = window.open('http://m.bluehouse.dk/?app=1', '_self', 'location=no');
             }
         </script>
     </head>
     <body onload="onLoad()">
-    	    	<div id="page" style="height:100%;width:100%;font-size:1.2em;">
-			<div style="text-align:center;">
-				Vent venligst...
+  	    	<div id="page" style="height:100%;width:100%;font-size:1.2em;">
+			<div style="text-align:center; padding-top:100px;">
+				<img src="res/screen/ios/Icon-60@3x.png"><br />
+				<p style="text-shadow:1px -1px 2px rgba(171,152,147,1);font-weight:bold;text-transform:uppercase;color:#000000;letter-spacing:2pt;word-spacing:0pt;font-size:19px;text-align:center;font-family:helvetica, sans-serif;line-height:1;">Vent venligst...</p>
 			</div>
-    	</div>    	
+			</div> 	
     </body>
 </html>
